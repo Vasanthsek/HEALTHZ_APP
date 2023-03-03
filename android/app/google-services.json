@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "557742357522",
+    "project_id": "healthz-app",
+    "storage_bucket": "healthz-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557742357522:android:71a45199c2e5874d7daccb",
+        "android_client_info": {
+          "package_name": "com.example.healthz_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557742357522-u41374hr3nb0fd4g9msmidqndrphanua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC70lrcNaPotJmcr_l_IjCe0JB1qSSgVZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "557742357522-u41374hr3nb0fd4g9msmidqndrphanua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

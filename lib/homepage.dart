@@ -45,11 +45,11 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(
                 height: 20.h,
               ),
-              sideDrawer("Name"),
-              sideDrawer("Email"),
-              sideDrawer("Phone"),
-              sideDrawer("Address"),
-              sideDrawer("Emergency Contact"),
+              commUtil.sideDrawer("Name"),
+              commUtil.sideDrawer("Email"),
+              commUtil.sideDrawer("Phone"),
+              commUtil.sideDrawer("Address"),
+              commUtil.sideDrawer("Emergency Contact"),
             ],
           ),
         ),
@@ -381,13 +381,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    bot("images/Vector (1).png", "Button-1",
+                   commUtil.bot("images/Vector (1).png", "Button-1",
                         const Color(0xFF2075D9)),
-                    bot("images/Vector (2).png", "Button-2",
+                    commUtil.bot("images/Vector (2).png", "Button-2",
                         Colors.transparent),
-                    bot("images/Vector (3).png", "Button-3",
+                    commUtil.bot("images/Vector (3).png", "Button-3",
                         Colors.transparent),
-                    bot("images/Vector (4).png", "Button-4",
+                    commUtil.bot("images/Vector (4).png", "Button-4",
                         Colors.transparent),
                   ],
                 ),
@@ -400,39 +400,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-Widget bot(String img, String val, Color col) {
-  return Column(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: [
-      Card(
-        elevation: 10,
-        color: const Color(0xFF2E2C71),
-        child: Container(
-          height: 28.h,
-          width: 28.w,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8.w), color: col),
-          child: Image.asset(
-            img,
-            height: 16.h,
-            width: 16.w,
-          ),
-        ),
-      ),
-      SizedBox(
-        height: 6.h,
-      ),
-      commUtil.txt(val, Colors.white, 12, FontWeight.w400)
-    ],
-  );
-}
 
-Widget sideDrawer(String name) {
-  return Padding(
-    padding: EdgeInsets.only(bottom: 10.h),
-    child: ListTile(
-      title: commUtil.txt(name, Colors.white, 16, FontWeight.w600),
-      tileColor: const Color(0xFF1B2152),
-    ),
-  );
-}
+
+
